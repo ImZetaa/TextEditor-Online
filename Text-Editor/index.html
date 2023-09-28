@@ -10,6 +10,9 @@
       <div class="logo">
         <h1>Belajar Kode Pemograman</h1>
       </div>
+      <div class="menu-toggle">
+        <button id="home-button">Beranda</button>
+      </div>
       <div class="menu">
         <ul>
           <li><a href="#">HTML</a></li>
@@ -28,14 +31,15 @@
     </div>
   </div>
   <div class="container">
-    <h1>Belajar Kode HTML dan CSS dengan Mudah</h1>
-    <p>Selamat datang di website belajar kode HTML dan CSS. Di sini anda akan mempelajari dasar-dasar pembuatan website dengan menggunakan bahasa pemrograman HTML dan CSS. Anda juga bisa mencoba kode-kode yang anda pelajari di editor online yang tersedia di website ini.</p>
+    <h1>Text Code Editor Online</h1>
+    <p>Text Code Editor Online kami dirancang untuk menjadi platform yang mudah digunakan bagi semua tingkat pengguna, dari pemula hingga pengembang berpengalaman. Ini memungkinkan kolaborasi dalam pengembangan perangkat lunak, menguji ide-ide baru, dan meningkatkan keterampilan pemrograman Anda tanpa perlu menginstal perangkat lunak tambahan di komputer Anda.</p>
     <div class="editor">
       <div class="tabs">
         <button id="html-tab" class="active">HTML</button>
         <button id="css-tab">CSS</button>
         <button id="js-tab">JS</button>
         <button id="run-button">Run</button>
+        <button id="save-button" onclick="saveCode()">Save</button>
       </div>
       <div class="code-area">
         <textarea id="html-code" class="code"></textarea>

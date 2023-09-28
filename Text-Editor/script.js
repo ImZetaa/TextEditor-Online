@@ -95,3 +95,38 @@ function toggleDarkMode() {
     }
 }
 
+var homeButton = document.getElementById("home-button");
+homeButton.addEventListener("click", function() {
+  menu.style.display = "block"; // Menampilkan kembali teks menu
+});
+
+function saveCode() {
+    // Ambil kode HTML, CSS, dan JS dari textarea
+    const html = htmlCode.value;
+    const css = cssCode.value;
+    const js = jsCode.value;
+  
+    // Gabungkan kode-kode tersebut menjadi satu string
+    const combinedCode = `<html>
+  <head>
+    <style>${css}</style>
+  </head>
+  <body>
+    ${html}
+    <script>${js}</script>
+  </body>
+  </html>`;
+  
+    // Buat sebuah objek Blob dari kode yang digabungkan
+    const blob = new Blob([combinedCode], { type: "text/html" });
+  
+    // Buat URL dari objek Blob
+    const url = URL.createObjectURL(blob);
+  
+    // Buat elemen anchor untuk mengunduh kode
+    const downloadLink = document.createElement("a");
+    downloadLink.href = url;
+    downloadLink.download = "saved-code.html";
+    downloadLink.click();
+  }
+  

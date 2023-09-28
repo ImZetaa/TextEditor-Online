@@ -54,7 +54,7 @@
   
   .code-area {
     display: flex;
-    width: 100%;
+    width: 130%;
     flex-wrap: wrap;
     justify-content: space-between; /* Untuk meletakkan elemen berdekatan kiri-kanan */
   }
@@ -94,7 +94,7 @@
   .logo h1 {
     margin: 0;
     font-size: 24px;
-    margin-left: -100px;
+    margin-left: -40px;
     color: white; /* Menambahkan warna putih ke teks "Belajar Kode" */
   }
   
@@ -137,4 +137,41 @@
     font-weight: bold;
   }
   
-  
+  @media screen and (max-width: 768px) {
+    .menu ul {
+      display: none; /* Menyembunyikan daftar menu */
+    }
+    .menu-toggle {
+      display: block; /* Menampilkan tombol beranda */
+    }
+    .header {
+      margin-top: -2%;
+    }
+    .logo h1 {
+      text-align: left;
+      margin: 0;
+      font-size: 17px;
+      margin-left: -34px;
+      color: white; /* Menambahkan warna putih ke teks "Belajar Kode" */
+    }
+    
+  /* Animasi tombol "Beranda" */
+
+  .menu-toggle.active #home-button {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#home-button {
+  background-color: transparent; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Hilangkan garis pinggir tombol */
+  padding: 10px 20px; /* Ruang bingkai tombol */
+  border-radius: 4px; /* Sudut bulat pada tombol */
+  cursor: pointer; /* Ubah kursor menjadi tangan saat diarahkan ke tombol */
+  font-weight: bold;
+  font-size: 17px;
+  margin-right: 30px;
+}
+
