@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Belajar Kode</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" id="theme-style" href="darkmode.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Belajar Kode Pemograman</h1>
+      </div>
+      <div class="menu-toggle">
+        <button id="home-button">Beranda</button>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Java Script</a></li>
+          <li><a href="#" onclick="toggleDarkMode()">Dark Mode</a></li>
+          <li><a href="#">Text Editor Online</a></li>
+        </ul>
+      </div>
+      <div class="login">
+        <a href="#">
+          <img src="login-icon.png" alt="Login">
+          <span class="username">Login</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Text Code Editor Online</h1>
+    <p>Text Code Editor Online kami dirancang untuk menjadi platform yang mudah digunakan bagi semua tingkat pengguna, dari pemula hingga pengembang berpengalaman. Ini memungkinkan kolaborasi dalam pengembangan perangkat lunak, menguji ide-ide baru, dan meningkatkan keterampilan pemrograman Anda tanpa perlu menginstal perangkat lunak tambahan di komputer Anda.</p>
+    <div class="editor">
+      <div class="tabs">
+        <button id="html-tab" class="active">HTML</button>
+        <button id="css-tab">CSS</button>
+        <button id="js-tab">JS</button>
+        <button id="run-button">Run</button>
+        <button id="save-button" onclick="saveCode()">Save</button>
+      </div>
+      <div class="code-area">
+        <textarea id="html-code" class="code"></textarea>
+        <textarea id="css-code" class="code hidden"></textarea>
+        <textarea id="js-code" class="code hidden"></textarea>
+        <iframe id="output" class="code"></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
