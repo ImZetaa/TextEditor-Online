@@ -53,11 +53,10 @@ input:checked + .slider:before {
     color: #fff;
 }
 
-.dark-mode .container h1 {
-    color: #fff;
+.dark-mode .hero {
+    background-color: #333;
 }
 
-.dark-mode .container p {
-    color: #fff;
+.dark-mode * {
+    background-color: #333;
 }
-
